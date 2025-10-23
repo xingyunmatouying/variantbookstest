@@ -48,4 +48,4 @@ jobs:
       - name: Run bot
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }} 
-        run: python user_interface.py "tournament 9rDB6cHy"
+        run: python user_interface.py
