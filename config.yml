@@ -137,6 +137,12 @@ opening_books:
       names:                              # List of names of books to use if there is no specific book for the time control, white, black or chess960.
         - Book1
         - Book
+        - YetAnotherBook
+    standard_tournament:
+      selection: best_move
+      allow_repeitions: true
+      names:
+        - Tourneys
 #   Use the same pattern for 'bullet', 'blitz', 'rapid', 'classical', time controls in initial_minutes+increment_seconds format,
 #   'antichess', 'atomic', 'chess960', 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
 #   Append '_white', '_black', '_human' and/or '_tournament' to use the book only as the specific color, against humans or in tournaments.
@@ -352,3 +358,5 @@ online_blacklists:                        # List of URLs for online blacklists. 
 books:                                    # Names of the opening books (to be used above in the opening_books section) and paths to the opening books.
   Book1: "./engines/Book1.bin"
   Book: "./engines/Booktest.bin"
+  YetAnotherBook: "./engines/yetanotherbook.bin"
+  Tourneys: "./engines/tournm.bin"
